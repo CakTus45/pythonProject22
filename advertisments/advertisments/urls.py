@@ -4,6 +4,7 @@ URL configuration for advertisments project.
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
 Examples:
+        'DIRS': [BASE_DIR/'templates'],
 Function views
     1. Add an import:  from my_app import views
     2. Add a URL to urlpatterns:  path('', views.home, name='home')
@@ -20,5 +21,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app_advertisments.urls')),
-    path('lesson_4/', include('app_lesson_4.urls')),
+    path('', include('app_lesson_4.urls')),
 ]
