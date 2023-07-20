@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} TEST {% endblock %}
+
+{% block content %}
+<h1>page 2</h1>
+
+<img src="{%static 'img/adv.png'%}">
+<a href="{%url 'test' %}">ссылка на первую страничку</a>
+
+{% endblock %}
